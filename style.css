@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.logo img{
+ width: 183px;
+}
+.landing-left{
+    display: flex;
+    flex-direction: column;
+gap: 160px;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.banner img{
+ height: 695px;
+ width: 650px;
+}
+.right-text{
+    color: #a60f37;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.text1{
+    font-weight: 700;
+    font-size: 27px;
+}
+.form-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 370px;
+    height: 264px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 2px;
+   flex-direction: column;
+   gap: 16px;
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input{
+    width: 338px;
+border-radius: 0px;
+background-color: #a60f37;
+margin-bottom: 10px;
+border: none;
+}
+.form-group input::placeholder {
+    color: white;
+    opacity: 1; 
+}
+.form-btn{
+    color: #a60f37;
+    background: transparent;
+margin-bottom: -20px;
+}
+.list{
+
+}
+.list li{
+    color: rgb(45, 44, 44);
+    font-size: 18px;
+  font-weight: 600;
+}
+.bottom-text hr{
+    border-top: 2px dashed rgb(0, 0, 0);
+    margin: 3px;
+}
+.bottom-text{
+    width: 322px;
+}
+.bottom-text-group{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom-text-group h3{ 
+    font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 1px;
+
+}
+.bottom-textgroup-2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.bottom-textgroup-2 h4{
+    font-weight: 700;
+  font-size: 22px;
+}
+.bottom-textgroup-2 span{
+    font-weight: 700;
+  font-size: 18px;
+  color: rgb(23, 23, 23)
+}
+.bottom-content-wrepper{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom-content-left{
+    background-color: #a60f37;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    border-radius: 0px 20px 20px 0px;
+    border-bottom: 7px solid rgb(144, 143, 143);
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+.bottom-content-left span{
+font-weight: 600;
+
+}
+.bottom-content-left h2{ 
+font-weight: 700;
+}
+.bottom-content-right{
+    width: 600px;
+    text-align: center;
+    height: 200px;
+    width: 900px;
+}
+.bottom-content-right-text{
+    background-color: #a60f37;
+    width: 800px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+
+}
+@media screen and (max-width: 768px){
+    .banner img {
+        height: 420px;
+        width: 591px;
+      } 
+      .landing-left {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+      }
+      .form-group input {
+        width: 241px;
+      }
+      .form-container {
+        width: 282px;
+        height: 236px; 
+        gap: 0px;
+      }
+      .form-hr{
+    display: none;
+      }
+      .bottom-text {
+        width: 322px;
+        margin-left: -89px;
+      }
+      .bottom-content-right-text {
+        width: 611px; 
+      }
+      .bottom-content-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+      }
+      .bottom-content-left {
+        top: -56px; 
+      }
+}
+@media screen and (max-width: 576px){
+    .landing-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img {
+        display: none;
+      }
+      .bottom-content-left {
+        top: 211px;
+      }
+      .bottom-content-wrepper {
+        top: 1022px;  
+      }
+      .form-container {
+        margin-left: -75px;
+      }
+}
